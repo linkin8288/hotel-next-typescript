@@ -1,86 +1,21 @@
-# Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
+.ts: This extension is used for regular TypeScript files. These files contain pure TypeScript code without any JSX syntax.
 
-![Copy of Fullstack Twitter Clone (8)](https://user-images.githubusercontent.com/23248726/229031522-64a49ad0-66f7-4ea8-94a8-f64a0bb56736.png)
-
-
-This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
-
-[VIDEO TUTORIAL](https://youtu.be/c_-b_isI4vg)
-
-Features:
-
-- Tailwind design
-- Tailwind animations and effects
-- Full responsiveness
-- Credential authentication
-- Google authentication
-- Github authentication
-- Image upload using Cloudinary CDN
-- Client form validation and handling using react-hook-form
-- Server error handling using react-toast
-- Calendars with react-date-range
-- Page loading state
-- Page empty state
-- Booking / Reservation system
-- Guest reservation cancellation
-- Owner reservation cancellation
-- Creation and deletion of properties
-- Pricing calculation
-- Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms
-    - For example we will filter out properties that have a reservation in your desired date range to travel
-- Favorites system
-- Shareable URL filters
-    - Lets say you select a category, location and date range, you will be able to share URL with a logged out friend in another browser and they will see the same results
-- How to write POST and DELETE routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle files like error.tsx and loading.tsx which are new Next 13 templating files to unify loading and error handling
-- How to handle relations between Server and Child components!
-
-### Prerequisites
-
-**Node version 14.x**
-
-### Cloning the repository
-
-```shell
-git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
-```
-
-### Install packages
-
-```shell
-npm i
-```
-
-### Setup .env file
-
-
-```js
-DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_SECRET=
-```
-
-### Setup Prisma
-
-```shell
-npx prisma db push
-
-```
-
-### Start the app
-
-```shell
-npm run dev
-```
-
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+1. Create Navbar, modals folder...
+2. Install zustand and creat hook folder.
+3. Create RegisterModal file in modals, Login functionality, import toast and other libraries.
+4. Create Category and Categories. Set individual routing and CSS.
+5. Create useRentModal and RentModal.
+6. Create step functionality in RentModal.
+7. Create CountrySelect to select countries.
+8. Create Map component and install leaflet, submit form, POST reqeust, route in api folder, create a post in Prisma.
+9. Inside page.tsx, create getListings in actions folder. 
+10. Create the asynchronous function in getListings file and fetch data from Prisma data.
+11. Fetch listings from getListings file in page.
+12. Create ListingCard component, like button functionality, and cancel reservation functionality.
+13. In api folder, create favorites route of like functionality with POST and DELETE method.
+14. Managing like button logic listingId route, HeartButton, and favorites hooks.
+15. Create individual list by creating listings folder inside app, listingId.
+16. In order to handle the logic of loading the inidividual list, creating getListById.ts file in actions.
+17. Listing, Reservation, Calendar
+18. Create Reservation POST and DELETE methods in reservations folder in api folder, inside ListingClient component in listings folder.
+19. To prevent other user reserve the same date range, create getReservation.ts file in actions file.
