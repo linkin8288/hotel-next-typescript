@@ -1,3 +1,10 @@
+# Hotel Booking
+
+This project is built with Nextjs, Typescript, and Cloudinary
+
+mail: admin@mail.com 
+password: admin
+
 .ts: This extension is used for regular TypeScript files. These files contain pure TypeScript code without any JSX syntax.
 
 1. Create Navbar, modals folder...
